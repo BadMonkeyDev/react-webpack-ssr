@@ -1,0 +1,64 @@
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+  padding: 2rem 8px;
+  overflow-y: auto;
+  background-color: theme('colors.black'/ 20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+
+  &.opened {
+    z-index: 1000;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+}
+
+.centered {
+  display: block;
+  padding: 0;
+  text-align: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+
+  .content {
+    cursor: auto;
+    max-width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+    padding: 2rem 1rem;
+
+    @screen sm {
+      padding: 2rem;
+    }
+  }
+}
+
+@screen md {
+  .root {
+    padding: 2rem 16px;
+  }
+}
+
+@screen xl {
+  .root {
+    padding: 2rem 32px;
+  }
+}

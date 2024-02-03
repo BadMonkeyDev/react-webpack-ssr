@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss"
+  ],
+  "rules": {
+    "indentation": [2],
+    "selector-class-pattern": null,
+    "no-empty-source": [
+      true, {
+        "severity": "warning"
+      }
+    ],
+    "block-no-empty": [
+      true, {
+        "severity": "warning"
+      }
+    ],
+    "scss/at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "tailwind",
+          "screen"
+        ]
+      }
+    ],
+    "scss/at-import-partial-extension": null
+  }
+}

@@ -1,0 +1,38 @@
+/* stylelint-disable-next-line */
+.root {
+  @apply relative;
+
+  .title {
+    @apply font-semibold px-4 py-2.5 cursor-pointer select-none border-2 border-b-0 border-solid border-gray-500 rounded-t bg-gray-100 flex justify-between items-center;
+  }
+
+  .options {
+    @apply absolute bg-gray-50 p-1 z-10 right-0 w-full border-2 border-t-0 border-solid border-gray-500 rounded-b;
+  }
+
+  &.closed {
+    .title {
+      @apply border-b rounded-b;
+    }
+
+    .options {
+      @apply hidden -z-10;
+    }
+  }
+
+  .option {
+    @apply select-none px-4 py-2.5 ;
+
+    &:not(.disabled) {
+      @apply cursor-pointer hover:bg-gray-200;
+    }
+
+    &.selected {
+      @apply bg-gray-200;
+    }
+
+    &.disabled {
+      @apply cursor-not-allowed text-gray-600;
+    }
+  }
+}

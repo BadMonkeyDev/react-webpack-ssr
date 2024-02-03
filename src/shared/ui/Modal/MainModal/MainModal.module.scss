@@ -1,0 +1,24 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 32px 20px;
+  background-color: theme('colors.gray.100');
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  position: relative;
+  cursor: default;
+}
+
+.closeButton {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.headingTitle {
+  @apply text-xl text-gray-600 mb-3;
+
+  text-align: center;
+}

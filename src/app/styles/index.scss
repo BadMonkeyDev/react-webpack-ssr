@@ -1,0 +1,13 @@
+@import "./reset.scss";
+@import "./variables/globals.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}

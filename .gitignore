@@ -1,0 +1,10 @@
+/public
+node_modules
+.idea
+/.env
+/package-lock.json
+/pnpm-lock.yaml
+/Dockerfile
+/.dockerignore
+/docker-compose.yml
+/bun.lockb

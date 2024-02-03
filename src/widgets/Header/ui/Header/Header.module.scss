@@ -1,0 +1,5 @@
+.header {
+  height: var(--header-height);
+
+  @apply flex items-center;
+}
